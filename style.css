@@ -14,7 +14,7 @@ body{
 
 .container-all{
     width: 95%;
-    max-width: 400px;
+    max-width: 500px;
     margin: auto;
     padding: 40px;
     background: rgba(16, 22, 26, 0.685);
@@ -78,7 +78,7 @@ p.liansky-logo {
       }
 
       p.liansky-logo img{
-          margin-top= 300px;
+          margin= 90px;
           idth: 150px; 
           height: 150px;
       }
