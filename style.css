@@ -8,18 +8,18 @@
 
 
 body{
-    background: #0a597a;
+    background-image: radial-gradient(circle at 120.71% 50%, #d7c35d 0, #deba54 8.33%, #e4b04d 16.67%, #e9a546 25%, #ed9841 33.33%, #f0893e 41.67%, #f2793c 50%, #f3673d 58.33%, #f35542 66.67%, #f34249 75%, #f22b52 83.33%, #f0065d 91.67%, #ec0069 100%);;
     margin-bottom: 100px
 }
 
 .container-all{
-    width: 100%;
-    max-width: 800px;
+    width: 95%;
+    max-width: 600px;
     margin: auto;
     padding: 40px;
-    background: #212E36;
+    background: rgba(16, 22, 26, 0.685);
     margin-top: 100px;
-    border-radius: 10px;
+    border-radius: 30px;
 }
 
 .container-all h1{
@@ -28,6 +28,7 @@ body{
 }
 
 .content-article{
+  text-align: center;
     margin-top: 40px;
 }
 
@@ -47,3 +48,26 @@ body{
     outline: none;
 }
 
+.container-all input{
+        display: inline-block;
+        padding: 15px 25px;
+        font-size: 20px;
+        cursor: pointer;
+        text-align: center;	
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: #0a597a;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+
+      }
+
+.container-all input:hover {background-color: #073b52}
+
+      .container-all input:active {
+        background-color: #073b52;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+      }
