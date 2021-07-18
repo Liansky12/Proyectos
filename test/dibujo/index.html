@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dibuja con Canvas</title>
+    <script type="text/javascript" src="canvas.js"></script>
+    <link href="canvas.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <header class="header">
+        <h1>Dibujando en HTML</h1>
+    </header>
+    <section class="contenedor">
+        <p>Selecciona el tamaño del puntero y el color.</p>
+        <div class="instrucciones">
+            <div class="nota">
+                <label>Tamaño Puntero</label>
+                <input type="number" id="puntero" min="0" max="5"/>
+            </div>
+            <div class="nota">
+                <label>Color</label>
+                <input type="color" id="color"/>
+            </div>
+        <input type="button" class="button" id="borrador" value="Borrar"/>
+        </div>
+    <section class="contenedor">
+        <canvas width="900" height="500" id="canvas">No soporta HTML</canvas>
+        <script type="text/javascript">
+        inicio();
+        </script>
+    </section>
+    </section>
+    
+</body>
+</html>
