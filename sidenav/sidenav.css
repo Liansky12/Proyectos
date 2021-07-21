@@ -223,7 +223,7 @@
 }
 .home-section{
   position: relative;
-  background: #E4E9F7;
+  background: radial-gradient(circle at 120.71% 50%, #ffffb5 0, #fdffaf 10%, #effcaa 20%, #def9a5 30%, #cdf6a0 40%, #b9f29d 50%, #a4ee9b 60%, #8dea9b 70%, #75e79e 80%, #58e3a2 90%, #2ee0a7 100%);
   min-height: 100vh;
   top: 0;
   left: 78px;
@@ -241,4 +241,44 @@
   font-size: 25px;
   font-weight: 500;
   margin: 18px
+}
+
+.container-all{
+    width: 95%;
+    max-width: 600px;
+    margin: auto;
+    padding: 40px;
+    background: white;
+    margin-top: 80px;
+    border-radius: 30px;
+}
+
+.container-all h1{
+  text-align: center;
+  font-size: 40px;
+}
+
+.content-article{
+  margin-top: 40px;
+  text-align: center;
+}
+
+.content-article p{
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+p.website-gif img{
+    height: 150px;
+}
+
+p.yukine-img,h5 {
+    text-align: center;
+    color: #EEF1F5;
+    }
+
+    p.yukine-img img{
+    margin-top: 180px;
+    margin-bottom: auto;
+    height: 200px;
 }
