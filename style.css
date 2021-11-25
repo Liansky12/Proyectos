@@ -71,12 +71,3 @@ body{
         box-shadow: 0 5px #666;
         transform: translateY(4px);
       }
-
-p.liansky-logo {
-      text-align: center;
-      color: #EEF1F5;
-      }
-
-      p.liansky-logo img{
-          width: 150px; height: 150px;
-      }
