@@ -1,19 +1,44 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script>
-        function suma(a,b){
-            var resultado = a + b;
-            alert("El resultado de la suma es igual a "+ resultado);
-        }
-    </script>
+    <title>Calculadora chafa</title>
 </head>
 <body>
-    <h1>Calculadora Web :D</h1>
-    <p>Ingresa valores para ser operados</p>
+    <br>
+    <form>
+        <h1>Calculadora chafa v1.0</h1>
+        <br>
+        <p>
+            <input type="number" size="55" id="id1">
+            <input list="operaciones" autocomplete=off size="8" id="id2">
+            <datalist id="operaciones">
+                <option value="Sumar">
+                <option value="Restar">
+                <option value="Multiplicar">
+                <option value="Dividir">
+            </datalist>
+            <input type="number" size="55" id="id3">
+            <input type="button" value="Calcular" id="id4">
+        </p>
+
+        <h2>El resultado es...</h2>
+        <h1 id="id5">0</h1>
+
+        <p><input type="reset" value="Borrar"></p>
+
+    </form>
+
+    <style>
+        body {
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+    </style>
+
+    <script src="calculadora.js"></script>
+
 </body>
 </html>
