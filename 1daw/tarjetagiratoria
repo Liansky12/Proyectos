@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Tarjeta giratoria</title>
+    <link rel="stylesheet" href="style-tarjetagiratoria.css">
+</head>
+
+<body>
+    <h1 class="titulo">Una de las maravillas del mundo antiguo</h1>
+    <div class="tarjeta">
+        <div class="imagen frontal">
+            <img src="stock-photo-great-sphinx-and-pyramid-under-bright-sun-1810839274.jpg"
+                alt="Gran Pirámide de Guiza en Guiza, Egipto">
+            <h2>Gran Pirámide de Guiza</h2>
+        </div>
+        <div class="imagen reverso">
+            <h3>Gran Pirámide de Guiza</h3>
+            <p>Uno de los monumentos más antiguos del planeta tierra. Las pirámides eran usadas como construcciones
+                funerarias bajo órdenes de faraones a lo largo de las diferentes dinastías. Su construcción es
+                totalmente un misterio...</p>
+            <div>
+                <a href="https://es.wikipedia.org/wiki/Gran_Pir%C3%A1mide_de_Guiza">Más información</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
