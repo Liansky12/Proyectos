@@ -1,2 +1,2 @@
 # Proyectos
-Una especie de porfolio donde espero desarrollar un espacio creativo.
+Una especie de porfolio donde espero desarrollar mi espacio creativo.
