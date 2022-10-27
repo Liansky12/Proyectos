@@ -1,42 +1,41 @@
 <!DOCTYPE html>
 <html>
 
+<head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png"
+    href="../../assets/img/l-icon.png">
+  <title>Tu peso en un lugar donde pesas menos</title>
+  <style>
+    * {
+      font-family: 'Arial', serif;
+    }
 
-  <head>
-    <link rel="icon" type="image/png" href="https://cdn.discordapp.com/attachments/829820463538241606/857389310029594634/l_3.png">
-    <title>Tu peso en un lugar donde pesas menos</title>
-  </head>
+    body {
+      background: #080a30;
+      text-align: center;
+      color: white;
+    }
 
-  <body>
-    <h1>Tu peso en otro planeta</h1>
-    <p>En la tierra pesas distinto que en Marte o Jupiter</p>
+    img {
+      text-align: center;
+      width: 250px;
+      height: 250px;
+      margin-left: 40px;
+    }
+  </style>
+</head>
 
-    
+<body>
+  <h1>Tu peso en otro planeta</h1>
+  <p>En la tierra pesas distinto que en Marte o Jupiter</p>
+  <img
+    src=https://images.8tracks.com/imgix/i/002/831/627/astronauts-gif-wallpaper-9to5-958.gif?rect=212,81,831,831&q=65&fit=max
+    alt='Anstronauta'>
 
-    <style src>
-      *{
-        font-family: 'Arial', serif;
-      }
-
-      body{
-        background: #080a30;
-        text-align: center;
-        color: white;
-      }
-
-      img{
-        text-align: center;
-        idth: 250px; height: 250px;
-        margin-left: 40px;
-      }
-
-    </style>
-
-
-    <script>
-    var usuario = prompt("Cual es tu peso?");
-    var planeta = parseInt(prompt("Elige tu planeta\n1 es marte, 2 es jupiter"));
+  <script>
+    var usuario = prompt("¿Cuál es tu peso?");
+    var planeta = parseInt(prompt("Elige tu planeta:\n1 es Marte, 2 es Jupiter"));
     var peso = parseInt(usuario);
     var g_tierra = 9.8;
 
@@ -44,26 +43,21 @@
     var g_jupiter = 24.8;
     var peso_final;
     var nombre;
-    if (planeta == 1)
-    {
-        peso_final = peso * g_marte / g_tierra;
-        nombre = "Marte";
+    if (planeta == 1) {
+      peso_final = peso * g_marte / g_tierra;
+      nombre = "Marte";
     }
-    else if(planeta == 2)
-    {
-        peso_final = peso * g_jupiter / g_tierra;
-        nombre = "Jupiter";
+    else if (planeta == 2) {
+      peso_final = peso * g_jupiter / g_tierra;
+      nombre = "Jupiter";
     }
-    else
-    {
+    else {
       peso_final = 1000000;
       nombre = "Krypton";
     }
     peso_final = parseInt(peso_final);
-    document.write("Tu peso en " + nombre + " es <strong>" + peso_final + " kilos</strong>");
-    </script>
+    document.write("<br>Tu peso en " + nombre + " es <strong>" + peso_final + " kilos</strong>");
+  </script>
+</body>
 
-    <img src=https://images.8tracks.com/imgix/i/002/831/627/astronauts-gif-wallpaper-9to5-958.gif?rect=212,81,831,831&q=65&fit=max alt='Anstronauta'>
-
-  </body>
 </html>
