@@ -66,6 +66,10 @@ body {
     margin-bottom: 0.4rem;
 }
 
+.content-article .nv3 {
+    cursor: not-allowed;
+}
+
 .container-all button:hover {
     animation-name: gradient;
     -webkit-animation-name: gradient;
