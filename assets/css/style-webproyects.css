@@ -36,6 +36,12 @@ body {
     text-align: center;
 }
 
+.content-article img {
+    width: 2rem;
+    height: 2rem;
+}
+
+
 .content-article h1 {
     text-align: center;
     font-size: 40px;
