@@ -1,75 +1,64 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="es">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="icon" type="image/png" href="./../assets/l-icon.png">
-    <title>Liansky</title>
-  </head>
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="../assets/css/style-login.css">
+    <link rel="shortcut icon" href="../assets/img/y-icon.png" type="image/png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,300,0,0">
+</head>
 <body>
-  <section class="form-login">
-    <h5>Acceso Administrativo</h5>
-    <input class="controls" type="text" name="usuario" value="" placeholder="Usuario">
-    <input class="controls" type="password" name="contrasena" value="" placeholder="Contraseña">
-    <input class="buttons" type="submit" name="" value="Iniciar Sesión">
-  </section>
+    <div class="login-card-container">
+        <div class="login-card">
+            <div class="login-card-logo">
+                <img src="../assets/img/y-icon.png" alt="logo">
+            </div>
+            <div class="login-card-header">
+                <h1>Iniciar Sesión</h1>
+                <div>Por favor, inicia sesión para usar la plataforma</div>
+            </div>
+            <form class="login-card-form">
+                <div class="form-item">
+                    <span class="form-item-icon material-symbols-rounded">mail</span>
+                    <input type="text" placeholder="Correo" required autofocus>
+                </div>
+                <div class="form-item">
+                    <span class="form-item-icon material-symbols-rounded">lock</span>
+                    <input type="password" placeholder="Contraseña" required>
+                </div>
+                <div class="form-item-other">
+                    <div class="checkbox">
+                        <input type="checkbox" id="rememberMeCheckbox">
+                        <label for="rememberMeCheckbox">Recuerdame</label>
+                    </div>
+                    <a href="#">He olvidado mi contraseña</a>
+                </div>
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+            <div class="login-card-footer">
+                ¿No tienes una cuenta? <a href="#">Crear una</a>.
+            </div>
+        </div>
+        <!--         <div class="login-card-social">
+            <div>Otras plataformas de Inicio de Sesión</div>
+            <div class="login-card-social-btn">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
+                     </svg>
+                </a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-google" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M17.788 5.108a9 9 0 1 0 3.212 6.892h-8"></path>
+                     </svg>
+                </a>
+            </div>
+        </div> -->
+
+    </div>
 </body>
-
 </html>
-
-<style>
-  *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-}
-
-body {
-  background-image: linear-gradient(to right, #000000, #00ff00, #207cca, #0000ff, #e60073, #ff0000, #ffffff);;
-}
-
-.form-login{
-  width: 95%;
-  max-width: 400px;
-  height: 300px;
-  margin: auto;
-  padding: 20px 30px;
-  background: #212E36;
-  margin-top: 180px;
-  border-radius: 20px;
-  box-shadow: 7px 13px 37px #000;
-  color: white;
-}
-
-.form-login h5 {
-  margin: 15px;
-  text-align: center;
-  height: 50px;
-  margin-bottom: 30px;
-  border-bottom: 1px solid;
-  font-size: 20px;
-}
-
-.controls {
-  width: 100%;
-  border: 1px solid #0a597a;
-  margin-bottom: 15px;
-  padding: 11px 10px;
-  background: #232425;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.buttons {
-  width: 100%;
-  height: 40px;
-  background: #0d79a7;
-  border: none;
-  color: white;
-  margin-bottom: 16px;
-  cursor: not-allowed;
-}
-  </style>

@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: radial-gradient(circle at 120.71% 50%, #ffffb5 0, #fdffaf 10%, #effcaa 20%, #def9a5 30%, #cdf6a0 40%, #b9f29d 50%, #a4ee9b 60%, #8dea9b 70%, #75e79e 80%, #58e3a2 90%, #2ee0a7 100%);
+    text-align: center;
+}
+
+p.yukine-img,
+h5 {
+    text-align: center;
+    color: #000;
+}
+
+p.yukine-img img {
+    height: 200px;
+    margin-top: 30px;
+}

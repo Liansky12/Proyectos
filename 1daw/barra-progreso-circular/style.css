@@ -1,0 +1,25 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+body {
+	display: flex;
+	justify-content: center;
+	background-color: lightgreen;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.barracircular {
+	width: 230px;
+	height: 230px;
+	border-radius: 50%;
+	background: white;
+}
+
+.porcentaje {
+	text-align: center;
+
+}

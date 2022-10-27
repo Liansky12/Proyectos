@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+
+body {
+    background: linear-gradient(334deg, #246655, #0cb665, #0c71b6);
+    /* background: #c1e1a7; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container-all {
+    width: 95%;
+    max-width: 580px;
+    padding: 40px;
+    background: rgb(16, 22, 26);
+    border-radius: 30px;
+    position: relative;
+    display: flex;
+    margin: 10px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.content-article {
+    text-align: center;
+}
+
+.content-article h1 {
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 2rem;
+}
+
+.container-all button {
+    background: linear-gradient(to right, #e72b2b 0%, #43e97b 100%);
+    background: -webkit-gradient(to right, #e72b2b 0%, #43e97b 100%);
+    background-size: 500%;
+    border: none;
+    border-radius: .9rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+    color: black;
+    cursor: pointer;
+    font-size: 1.2em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    height: 5rem;
+    letter-spacing: .05em;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 15rem;
+    margin-bottom: 0.4rem;
+}
+
+.container-all button:hover {
+    animation-name: gradient;
+    -webkit-animation-name: gradient;
+    animation-duration: 2s;
+    -webkit-animation-duration: s;
+    animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.container-all button:active {
+    background-color: #073b52;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+@keyframes gradient {
+    0% {background-position: 0% 50%;}
+  100% {background-position: 100%;}
+}
