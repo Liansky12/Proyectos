@@ -83,12 +83,6 @@ body {
     transform: translateY(4px);
 }
 
-.container-all .content-article img {
-    width: 1.2rem;
-    height: 1.2rem;
-    
-}
-
 @keyframes gradient {
     0% {background-position: 0% 50%;}
   100% {background-position: 100%;}
