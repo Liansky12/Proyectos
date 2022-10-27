@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario de alta</title>
+	<link rel="shortcut icon" href="../../assets/img/l-icon.png" type="image/png">
+</head>
+<body>
+	<form>
+		<label for="fname">Nombre:</label>
+		<input type="texto" id="fname" name="fname"><br><br>
+		<label for="fsurname">Primer apellido:</label>
+		<input type="text" id="fsurname" name="fsurname"><br><br>
+		<label for="ssurname">Segundo apellido:</label>
+		<input type="text" id="ssurname" name="ssurname"><br><br>
+		<label for="email">Correo electrónico:</label>
+		<input type="email" id="email" name="email" placeholder="ej: user@example.com"><br><br>
+		<label for="phone">Número de teléfono:</label>
+		<input type="tel" id="phone" name="phone" placeholder="ej: 612 345 678"><br><br>
+		<label for="homepage">Página personal:</label>
+		<input type="url" id="homepage" name="homepage" placeholder="ej: example.com"><br><br>
+		<label for="pwd1">Contraseña:</label>
+		<input type="password" id="pwd1" name="pwd1"><br><br>
+		<label for="pwd2">Repite la contraseña:</label>
+		<input type="password" id="pwd2" name="pwd2"><br><br>
+		<label for="height">Altura:</label>
+		<input type="number" id="height" name="height" placeholder="0,00 m" min="0.00" max="2.50" step="0.10"><br><br>
+		<label for="birthday">Fecha de nacimiento:</label>
+		<input type="date" id="birthday" name="birthday" min="1899-01-01" max="2022-10-23"><br><br>
+		<label for="identidy">Selecciona una opción:</label><br>
+		<input type="radio" id="man" name="identidy" value="Hombre">Hombre
+		<input type="radio" id="woman" name="identidy" value="Mujer">Mujer
+		<input type="radio" id="other" name="identidy" value="Otro">Otro
+		<input type="radio" id="null" name="identidy" value="NS/NC">NS/NC<br><br>
+		<label for="favcolor">Color favorito:</label>
+		<input type="color" id="favcolor" name="favcolor"><br><br>
+		<input type="checkbox" id="conditions" name="conditions" value="Conditions">Aceptar los <a href="#">términos y condiciones</a>.<br><br>
+		<input type="submit" value="Enviar">
+	</form>
+</body>
+</html>

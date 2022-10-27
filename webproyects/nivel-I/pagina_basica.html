@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<style type="text/css">
+		table,
+		th,
+		td {
+			border: 1px solid black;
+			border-color: black;
+		}
+	</style>
+	<link rel="shortcut icon" href="../../assets/img/l-icon.png" type="image/png">
+	<title>Página básica</title>
+</head>
+
+<body>
+	<h1>Elementos básicos de HTML</h1>
+	<p>A continuación se expone una lista de algunos de los elementos HTML más básicos.</p>
+	<ol>
+		<li>Los elementos párrafo se ponen con &lt;p&gt;Nombre&lt;/p&gt;</li>
+		Los párrafos son de tipo bloque.
+		<li>Las listas son muy útiles para muchas cosas:</li>
+		<ul>
+			<li>Puedo mostrar información ordenada &lt;ol&gt; y no ordenada &lt;ul&gt;.</li>
+			<li>Todo se ve más claramente.</li>
+			<li>Puedo anidarlas sin problema.</li>
+		</ul>
+		<li>Las tablas permiten mostrar claramente información.</li>
+	</ol>
+	<h2>Aerogeneradores de Galicia</h2>
+	<table>
+		<tr>
+			<th>Tipo</th>
+			<th>Provincia</th>
+			<th>Ayuntamiento</th>
+			<th>N.º</th>
+		</tr>
+		<tr>
+			<td rowspan="6">Aerogenerador</td>
+			<td rowspan="3">Lugo</td>
+			<td>Abadín</td>
+			<td>198</td>
+		</tr>
+		<tr>
+			<td>Alfoz</td>
+			<td>35</td>
+		</tr>
+		<tr>
+			<td>Antas de Ulla</td>
+			<td>2</td>
+		</tr>
+		<tr>
+			<td rowspan="2">Pontevedra</td>
+			<td>Agolada</td>
+			<td>11</td>
+		</tr>
+		<tr>
+			<td>Vilagarcía de Arousa</td>
+			<td>2</td>
+		</tr>
+		<tr>
+			<td>A Coruña</td>
+			<td>Aranga</td>
+			<td>15</td>
+		</tr>
+		<tr>
+			<td colspan="2">Totales</td>
+			<td>263</td>
+		</tr>
+	</table>
+	<ol start="4">
+		<li>Otro elemento interesante es &lt;a&gt;, que me permite enlazar distintas páginas, internas o externas.</li>
+		Como este <a href="http://google.es">enlace a Google</a>
+		<br>
+		O este <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada">enlace a Wikipedia</a>
+	</ol>
+</body>
+
+</html>
