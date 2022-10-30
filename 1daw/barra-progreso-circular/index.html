@@ -3,6 +3,8 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Barra de progreso circular</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -10,17 +12,23 @@
 <body>
 	<section>
 		<div class="contenedor">
-			<div class="circle-wrap">
-				<div class="circle">
-					<div class="mask full-1">
-						<div class="fill-1"></div>
+			<div class="circunferencia-a">
+				<div class="circunferencia-b">
+					<div class="porcentaje">
+						<p>65%</p>
 					</div>
-					<div class="mask half">
-						<div class="fill-1"></div>
-					</div>
-					<div class="inside-circle">75%</div>
 				</div>
 			</div>
+			<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+				<defs>
+					<linearGradient id="GradientColor">
+						<stop offset="0%" stop-color="#def9a5" />
+						<stop offset="100%" stop-color="#75e79e" />
+					</linearGradient>
+				</defs>
+				<circle cx="80" cy="80" r="70" stroke-linecap="round" />
+			</svg>
+
 		</div>
 	</section>
 </body>
