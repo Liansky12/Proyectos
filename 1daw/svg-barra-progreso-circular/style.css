@@ -20,7 +20,7 @@ body {
 	position: relative;
 	width: 304px;
 	height: 336px;
-	background: white;
+	background: #28292d;
 	border-radius: 15px;
 	box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.5);
 }
@@ -29,7 +29,7 @@ body {
 	height: 160px;
 	width: 160px;
 	padding: 20px;
-	box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+	box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(0, 0, 0, 0.7);
 	border-radius: 50%;
 }
 
@@ -39,35 +39,40 @@ body {
 	justify-content: center;
 	height: 120px;
 	width: 120px;
-	box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7), -0.5px -0.5px 0px rgba(255, 255, 255, 0.1), 0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+	box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), inset -4px -4px 6px -1px rgba(0, 0, 0, 0.7), -0.5px -0.5px 0px rgba(0, 0, 0, 0.1), 0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
 	border-radius: 50%;
 }
 
 .porcentaje {
 	font-size: 25px;
 	font-weight: bold;
-	color: rgb(82, 82, 82);
+	color: white;
 }
 
 svg {
 	position: absolute;
-	top: 0;
-	left: 0;
 }
 
-circle {
+.circulo-a {
 	fill: none;
-	stroke: url(#GradientColor);
-	stroke-width: 20px;
-	stroke-dasharray: 450; /* x */
-	stroke-dashoffset: 450; /* y */
-	animation: anim 2s linear forwars;
+	width: 100%;
+	height: 100%;
+	stroke: rgba(255, 255, 255, 0.10);
+	stroke-width: 20;
+}
+
+.circulo-b {
+	fill: none;
+	stroke: rgb(117, 231, 158);
+	stroke-width: 20;
+	stroke-dasharray: 450; /* 1 */
+	stroke-dashoffset: 450; /* 2 */
+	animation: anim 2s linear forwards;
 }
 
 @keyframes anim {
 	100% {
-		/* Cálculo de x - y · 0."porcentaje" */
-		stroke-dashoffset: 157.5;
+		/* Cálculo de: 1 - 2 · 0."porcentaje" */
+		stroke-dashoffset: 99;
 	}
 }
-
