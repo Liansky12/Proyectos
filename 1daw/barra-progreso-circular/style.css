@@ -1,25 +1,74 @@
 * {
-	padding: 0;
 	margin: 0;
-	box-sizing: border-box;
+	padding: 0;
+	/* box-sizing: border-box; */
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
 }
+
 body {
 	display: flex;
-	justify-content: center;
-	background-color: lightgreen;
 	align-items: center;
+	justify-content: center;
 	min-height: 100vh;
 }
 
-.barracircular {
-	width: 230px;
-	height: 230px;
-	border-radius: 50%;
-	background: white;
+.contenedor {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	width: 304px;
+	height: 336px;
+	background: #28292d;
+	border-radius: 15px;
+	box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.5);
 }
 
-.porcentaje {
-	text-align: center;
+.circle-wrap {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.5);
+}
 
+.circle-wrap .circle .mask, .circle-wrap .circle .fill-1 {
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	border-radius: 50%;
+}
+
+.circle-wrap .circle .mask {
+	clip: rect(0px, 150px, 150px, 75px);
+}
+
+.mask .fill-1 {
+	clip: rect(0px, 75px, 150px, 0px);
+	background-color: #ec0c0c;
+}
+
+.mask.full-1, .circle .fill-1 {
+	animation: fill-1 ease-in-out 3s;
+	transform: rotate(135deg);
+}
+
+@keyframes fill-1 {
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(135deg);}
+}
+
+.inside-circle {
+	width: 124px;
+	height: 124px;
+	border-radius: 50%;
+	background: #28292d;
+	line-height: 120px;
+	position: absolute;
+	margin-top: 13px;
+	margin-left: 13px;
+	z-index: 100;
+	font-size: 2rem;
+	font-weight: 700;
+	color: #fff;
+	text-align: center;
 }
