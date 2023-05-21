@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+:root {
+    /* Colors */
+    --theme-color: white;
+    --nav-background: hwb(262 67% 6%);
+    --primary-color: #5f6cdf;
+    --background-theme: #e1e3f5;
+    --hover-backgrund-color: #ccae5a;
+    --text-color: gray;
+    --black: #000;
+    --menu-mobile-background-color: #243cc2;
+    --footer-background-color: #5666c0;
+    --text-menu-mobile-color: white;
+    --hover: #5862eb;
+
+    /* Fonts-size */
+    --small: 12px;
+    --normal: 16px;
+    --medium: 22px;
+    --large: 36px;
+    
+}
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    background-color: var(--background-theme);
+}

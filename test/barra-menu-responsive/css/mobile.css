@@ -1,0 +1,92 @@
+@media(max-width:500px) {
+    
+    .container {
+        position: relative;
+        width: 500px;
+        height: 100%;
+    }
+
+    .header {
+        display: flex;
+        width: 500px;
+        box-sizing: border-box;
+        width: 100%;
+        height: 120px;
+        background-color: var(--primary-color);
+        border-bottom: 3px solid white ;
+    }
+    .nav-bar {
+        display: flex;
+        box-sizing: border-box;
+        width: 100%;
+        height: 120px;
+    }
+    .nav-left {
+        display: flex;
+        align-items: center;
+    }
+    .nav-left .avatar {
+        width: 80px;
+        height: 80px;
+        border: 2px solid var(--theme-color);
+        border-radius: 50%;
+        margin-left: 15px;
+    }
+    .nav-left p #name {
+        font-size: var(--medium);
+    }
+    .nav-left p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 50px;
+        font-size: var(--small);
+        font-weight: bold;
+    }
+
+    .menu {
+        margin-top: 250px;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .menu-item {
+        display: flex;
+        width: 470px;
+        right: 0;
+        flex-direction: column;
+    }
+    .menu-item li {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        background-color: var(--menu-mobile-background-color);
+        width: 450px;
+        height: 60px;
+        margin: 10px;
+        border-radius: 15px;
+        border: 2px solid #7d5c5c;
+        font-family: 'Roboto', sans-serif;
+        font-size: var(--medium);
+    }
+    .menu-item li:hover {
+        background-color: var(--hover-backgrund-color);
+
+    }
+
+    .footer {
+        display: flex;
+        position: absolute;
+        bottom: 0px;
+        font-size: var(--small);
+        color: var(--primary-color);
+        font-weight: bold;
+        width: 100%;
+        height: 60px;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

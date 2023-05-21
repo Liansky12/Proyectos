@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container {
+    background-color: #324154;
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    grid-template-rows: 50px 1fr 50px;
+    grid-template-areas: 
+        'aside header' 
+        'aside main' 
+        'aside footer';
+    height: 100vh;
+}
+
+.header {
+    background-color: #64748b;
+    border-radius: 10px;
+    margin: 10px;
+    grid-area: header;
+}
+
+.aside {
+    background-color: #64748b;
+    border-radius: 10px;
+    margin: 10px;
+    grid-area: aside;
+}
+
+.main {
+    border-radius: 10px;
+    margin: 10px;
+    grid-area: main;
+}
+
+.footer {
+    background-color: #64748b;
+    border-radius: 10px;
+    margin: 10px;
+    grid-area: footer;
+}
+
+.overview-content {
+    border-radius: 10px;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.overview-card {
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #64748b;
+}
+
+.chart-content {
+    border-radius: 10px;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 200px 200px;
+    grid-template-areas: 
+        'chart overview' 
+        'chart overview';
+    grid-gap: 10px;
+}
+
+.chart {
+    background-color: #64748b;
+    border-radius: 10px;
+    margin: 10px;
+    grid-area: chart;
+}
+
+.chart-overview {
+    background-color: #64748b;
+    border-radius: 10px;
+    margin: 10px;
+    grid-area: overview;
+}
