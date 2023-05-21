@@ -1,0 +1,28 @@
+#contenido-principal > div, div #square, #form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+div #square {
+    border: 1.6px solid var(--transparent);
+    border-radius: 7px;
+    padding: 2em;
+}
+
+#form {
+    margin-top: 1em;
+}
+
+#form + span {
+    text-align: center;
+    margin-top: 1em;
+}
+
+@media screen and (min-height: 751px) {
+    #footer {
+        position: absolute;
+        bottom: 0;
+    }
+}

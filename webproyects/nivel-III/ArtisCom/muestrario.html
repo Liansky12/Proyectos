@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Muestrario</title>
+	<link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Round|Material+Icons+Outlined"
+		rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/estilo_general.css">
+	<link rel="stylesheet" href="assets/css/muestrario.css">
+</head>
+
+<body>
+	<header id="sticky-menu">
+		<span onclick="location='index.html'">ArtisCom</span>
+		<nav>
+			<ul>
+				<i class="material-icons-round" onclick="location='index.html'">home</i>
+				<li><a href="index.html" alt="Inicio">Inicio</a></li>
+				<i class="material-icons-round" onclick="location='contacto.html'">man</i>
+				<li><a href="contacto.html" alt="Conócenos">Conócenos</a></li>
+				<i class="material-icons-round" onclick="location='muestrario.html'">storefront</i>
+				<li><a href="muestrario.html" alt="Muestrario">Muestrario</a></li>
+				<i class="material-icons-round" onclick="location='login.html'">login</i>
+				<li><a href="login.html" alt="Iniciar Sesión">Iniciar Sesión</a></li>
+				<i class="material-icons-round" onclick="location='blog.html'">rss_feed</i>
+				<li><a href="blog.html" alt="Blog">Blog</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main id="contenido-principal">
+		<!-- Contenido principal de la página aquí -->
+		<div>
+			<div id="cabecera">
+				<h2>Muestrario</h2>
+				<div id="contenedor-icon">
+					<i class="material-icons-outlined">shopping_cart</i>
+					<div>
+						<span>0</span> <!-- Contador de productos, implementar con JS -->
+					</div>
+				</div>
+			</div>
+			<div id="filtradores">
+				<ul>
+					<li><label for="All">Todo</label></li>
+					<li><label for="libros">Libros</label></li>
+					<li><label for="revistas">Revistas</label></li>
+					<li><label for="discos">Discos</label></li>
+					<li><label for="albumes">Álbumes</label></li>
+					<li><label for="pinturas">Pinturas</label></li>
+					<li><label for="arte_digital">Arte Digital</label></li>
+				</ul>
+			</div>
+			<div id="contenedor-items">
+				<div class="item">
+					<!-- Los alt en la etiqueta figure sirve para mostrar contenido en pseudo-elemento after -->
+					<figure alt="'La vela' es un libro inspirado en los antigüos relatos de fantasía. Gerónimo Méndez nos promete horas y horas de lectura divertida.">
+						<img src="assets/img/muestrario/img06.png" alt="La Vela por G. Méndez">
+					</figure>
+					<div>
+						<h3>La vela</h3>
+						<span>G. Méndez. 2021</span>
+						<span>9.99</span>
+						<button>Añadir al carrito</button>
+					</div>
+				</div>
+				<div class="item">
+					<figure alt="Un ejemplar de pintura en óleo más famosa de Sofía García.">
+						<img src="assets/img/muestrario/img17.png" alt="Hacia las estrellas por S García">
+					</figure>
+					<div>
+						<h3>Hacia las estrellas</h3>
+						<span>S. García. 2022</span>
+						<span>49</span>
+						<button>Añadir al carrito</button>
+					</div>
+				</div>
+				<div class="item">
+					<figure alt="López con su lanzamiento de 2022, nos sumerge en este particular álbum de música alternativa.">
+						<img src="assets/img/muestrario/img08.png" alt="Future Car por I. López">
+					</figure>
+					<div>
+						<h3>Future Car</h3>
+						<span>I. López. 2022</span>
+						<span>79.89</span>
+						<button>Añadir al carrito</button>
+					</div>
+				</div>
+				<div class="item">
+					<figure alt="Frederic Blue, un cantautor británico nos presenta este disco de Rock merecedor de grandes premios internacionales.">
+						<img src="assets/img/muestrario/img11.png" alt="Tomorrow por H. F. Blue">
+					</figure>
+					<div>
+						<h3>Tomorrow</h3>
+						<span>H. F. Blue. 2020</span>
+						<span>29.49</span>
+						<button>Añadir al carrito</button>
+					</div>
+				</div>
+				<div class="item">
+					<figure alt="El relato documental de la persona que con una idea pudo revolucionar los mercados de New York.">
+						<img src="assets/img/muestrario/img02.png" alt="La Idea del Millón por M. Gema">
+					</figure>
+					<div>
+						<h3>La Idea del Millón</h3>
+						<span>M. Gema. 2022</span>
+						<span>59.10</span>
+						<button>Añadir al carrito</button>
+					</div>
+				</div>
+				<div class="item">
+					<figure alt="Este es el cuento sobre el gato que se convirtió en alien por una semana. Nunca se había divertido tanto en su vida.">
+						<img src="assets/img/muestrario/img05.png" alt="The UFO por Mark Johnson">
+					</figure>
+					<div>
+						<h3>The UFO</h3>
+						<span>Mark Johnson. 2020</span>
+						<span>38.99</span>
+						<button>Añadir al carrito</button>
+					</div>
+				</div>
+			</div>
+			<div id="datos-tecnicos">
+				<h2>Datos de obras</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>ISBN / Código</th>
+							<th>Tipo</th>
+							<th>Título / Nombre</th>
+							<th>Autor / Artista</th>
+							<th>Año pub.</th>
+							<th>Género / Tipo</th>
+							<th>Precio</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>978-0-999-96590-2</td>
+							<td>Libro</td>
+							<td>El cazador de sueños</td>
+							<td>Sarah Jones</td>
+							<td>2020</td>
+							<td>Fantasía</td>
+							<td>16.99</td>
+						</tr>
+						<tr>
+							<td>978-0-999-94545-7</td>
+							<td>Libro</td>
+							<td>El viaje de la vida</td>
+							<td>John Smith</td>
+							<td>2019</td>
+							<td>Aventura</td>
+							<td>17.99</td>
+						</tr>
+						<tr>
+							<td>978-1-390-88767-1</td>
+							<td>Libro</td>
+							<td>La magia del amor</td>
+							<td>Emily Brown</td>
+							<td>2018</td>
+							<td>Romance</td>
+							<td>14.99</td>
+						</tr>
+						<tr>
+							<td>978-0-999-91341-9</td>
+							<td>Libro</td>
+							<td>Esperanza y Fuerza</td>
+							<td>Jane Miller</td>
+							<td>2017</td>
+							<td>Ciencia ficción</td>
+							<td>12.99</td>
+						</tr>
+						<tr>
+							<td>978-0-999-95678-3</td>
+							<td>Revista</td>
+							<td>El poder de la imaginación</td>
+							<td>Mark Johnson</td>
+							<td>2017</td>
+							<td>Documental</td>
+							<td>9.99</td>
+						</tr>
+						<tr>
+							<td>654-490</td>
+							<td>Disco musical</td>
+							<td>Tomorrow</td>
+							<td>Frederic Blue</td>
+							<td>2020</td>
+							<td>Rock</td>
+							<td>29</td>
+						</tr>
+						<tr>
+							<td>944-568</td>
+							<td>Álbum musical</td>
+							<td>Libertad</td>
+							<td>Mark Johnson</td>
+							<td>2017</td>
+							<td>Alternativa</td>
+							<td>19.99</td>
+						</tr>
+						<tr>
+							<td>452-789</td>
+							<td>Pintura</td>
+							<td>Hacia las estrellas</td>
+							<td>Sofía García</td>
+							<td>2022</td>
+							<td>Boceto al óleo</td>
+							<td>49</td>
+						</tr>
+						<tr>
+							<td>109-633</td>
+							<td>Arte digital</td>
+							<td>El destino</td>
+							<td>Robert Moore</td>
+							<td>2019</td>
+							<td>Animación</td>
+							<td>13.99</td>
+						</tr>
+					</tbody>
+
+				</table>
+			</div>
+		</div>
+	</main>
+
+	<footer id="footer">
+		<img src="assets/img/cc_323x77.png" alt="Licencia CC Reconocimiento-NoComercial-SinObraDerivada 4.0 Internacional" title="Licencia CC Reconocimiento-NoComercial-SinObraDerivada 4.0 Internacional">
+		<p>Esta página está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">licencia de Creative Commons.</a></p>
+		<span><i class="material-icons-round" onclick="location='contacto.html'">man</i></span><a href="contacto.html" alt="contacto.html">Contacto</a>
+	</footer>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+section section {
+    padding: 1.3em;
+    margin-top: 0.5em;
+    border-radius: 7px;
+    background-color: var(--gray);
+}
+
+section h3 {
+    color: var(--navy);
+}
+
+section h3::before {
+    content: url(../img/icons/chevron_right_black_18dp.svg);
+    display: inline-block;
+    vertical-align: -3px;
+    height: 1em;
+    width: 1em;
+}
+
+section article {
+    margin-top: 0.6em;
+}
+
+section article p {
+    text-align: justify;
+}
+
+section #extra {
+    margin-top: 1em;
+}
+

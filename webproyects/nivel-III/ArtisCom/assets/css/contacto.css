@@ -1,0 +1,30 @@
+#info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+#info span i {
+    margin-right: 5px;
+    font-size: 1.6em;
+    cursor: auto;
+}
+
+#info span {
+    display: inline-flex;
+    margin: 5px;
+}
+
+#info div iframe {
+    margin-top: 20px;
+    border: 2px solid var(--transparent);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+@media screen and (min-height: 800px) {
+    #footer {
+        position: absolute;
+        bottom: 0;
+    }
+}
