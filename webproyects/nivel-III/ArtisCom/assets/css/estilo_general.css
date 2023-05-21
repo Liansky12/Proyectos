@@ -55,6 +55,10 @@ a:active {
 	color: var(--blue);
 }
 
+#sticky-menu #l_ac:hover {
+	cursor: pointer;
+}
+
 #sticky-menu nav ul li a {
 	margin-right: 20px;
 	font-weight: bold;
