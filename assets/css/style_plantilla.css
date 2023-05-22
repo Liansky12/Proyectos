@@ -42,6 +42,11 @@ body {
     padding-bottom: 2rem;
 }
 
+.content-article img {
+    width: 2rem;
+    height: 2rem;
+}
+
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
