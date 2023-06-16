@@ -6,12 +6,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-    color: white;
+    color: rgb(34, 34, 34);
 }
 
 
 body {
-    background: linear-gradient(334deg, #246655, #0cb665, #0c71b6);
+    background-image: url(backgrounds/bg.jpg);
     /* background: #c1e1a7; */
     display: flex;
     align-items: center;
@@ -23,7 +23,7 @@ body {
     width: 95%;
     max-width: 580px;
     padding: 40px;
-    background: rgba(16, 22, 26, 0.901);
+    background-color: rgba(227, 227, 227, 0.901);
     border-radius: 30px;
     position: relative;
     display: flex;
@@ -50,7 +50,7 @@ body {
 }
 
 .container-all button {
-    background: linear-gradient(to right, #2be7b5 0%, #43e97b 100%);
+    background: linear-gradient(to right, #25bf96 0%, #39ca69 100%);
     background: -webkit-gradient(to right, #e72b2b 0%, #43e97b 100%);
     background-size: 500%;
     border: none;
