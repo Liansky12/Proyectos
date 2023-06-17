@@ -1,57 +1,61 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', 'Roboto', sans-serif;
     color: white;
     line-height: 1.5;
-  }
-  
-  body{
+}
+
+body {
     background: radial-gradient(circle at 120.71% 50%, #ffffb5 0, #fdffaf 10%, #effcaa 20%, #def9a5 30%, #cdf6a0 40%, #b9f29d 50%, #a4ee9b 60%, #8dea9b 70%, #75e79e 80%, #58e3a2 90%, #2ee0a7 100%);
     margin-bottom: 100px
-  }
-  
-  .container-all{
-      width: 95%;
-      max-width: 800px;
-      margin: auto;
-      padding: 40px;
-      background: #212E36;
-      margin-top: 100px;
-      border-radius: 30px;
-  }
-  
-  .container-all h1{
-      text-align: center;
-      font-size: 40px;
-  }
-  
-  .content-article{
-      margin-top: 40px;
-  }
-  
-  .content-article p{
-      font-size: 16px;
-      margin-top: 20px;
-  }
-  
-  
-  .content-article input{
-      padding: 20px 60px;
-      margin-top: 20px;
-      background: #00b1ff;
-      border: none;
-      font-size: 16px;
-      border-radius: 10px;
-      outline: none;
-  }
-  
-  p2.last-update,h4 {
-    text-align: right;
-  }
+}
 
-  .brand{
+.container-all {
+    width: 95%;
+    max-width: 800px;
+    margin: auto;
+    padding: 40px;
+    background: #212E36;
+    box-shadow: 7px 13px 37px #000;
+    margin-top: 100px;
+    border-radius: 30px;
+}
+
+.container-all h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.content-article {
+    margin-top: 40px;
+}
+
+.content-article p {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+
+.content-article input {
+    padding: 20px 60px;
+    margin-top: 20px;
+    background: #00b1ff;
+    border: none;
+    font-size: 16px;
+    border-radius: 10px;
+    outline: none;
+}
+
+p2.last-update,
+h4 {
+    text-align: right;
+}
+
+.brand {
     position: absolute;
     width: 200px;
     background: rgb(255, 255, 255);
@@ -59,17 +63,17 @@
     margin: auto;
     padding: 15px;
     padding-left: 55px;
-  }
+}
 
-  .brand img{
+.brand img {
     width: 70%;
     height: auto;
-  }
-  @supports(object-fit: cover){
-      .img{
+}
+
+@supports(object-fit: cover) {
+    .img {
         height: 100%;
         object-fit: cover;
         object-position: center center;
-      }
-  }
-  
+    }
+}
