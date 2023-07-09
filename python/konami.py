@@ -6,7 +6,7 @@ KONAMI_CODE = [
     KeyCode.from_char("b"), KeyCode.from_char("a")
 ]
 
-def on_press(key) :
+def on_press(key):
     print(key)
 
 with Listener(on_press=on_press) as listener:
