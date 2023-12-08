@@ -1,0 +1,108 @@
+@import url(../normalice.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+    --color-1: rgb(4, 13, 18);
+    --color-2: rgb(24, 61, 61);
+    --color-3: rgb(92, 131, 116);
+    --color-4: rgb(147, 177, 166);
+    --color-fondo: #f1f1f1;
+    --fuente-tamaño: 16px;
+    --fuente-general: "Poppins", "Arial", sans-serif;
+    --borde-redondeado-tamaño: 1rem;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color: unset;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-color: var(--color-fondo);
+    font-family: var(--fuente-general);
+    font-size: var(--fuente-tamaño);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+body :where(header, footer) {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-1);
+    color: var(--color-4);
+    padding: 1rem;
+    margin: 5px;
+    border-radius: var(--borde-redondeado-tamaño);
+}
+
+body header {
+    justify-content: space-between;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
+
+header h1 {
+    font-size: large;
+}
+
+body header svg {
+    fill: var(--color-4);
+}
+
+body main {
+    flex: 1;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 1rem;
+}
+body footer {
+    gap: 1rem;
+    justify-content: center;
+}
+
+body a#logos_cc {
+    display: flex;
+    gap: 0.5rem;
+}
+
+body a#logos_cc svg {
+    width: 30px;
+}
+
+body a#logos_cc svg circle {
+    fill: none;
+}
+
+body a#logos_cc svg path {
+    fill: var(--color-4);
+}
+
+@media screen and (max-width: 600px) {
+    :root {
+        --fuente-tamaño: 15px;
+    }
+    body :where(header, footer) {
+        flex-direction: row;
+    }
+}
