@@ -4,9 +4,10 @@ import './App.css'
  * que persiste durante todo el ciclo de vida del componente
  * y no cambia el renderizado del componente
 */
-import { useEffect, useState, useRef } from 'react'
+import { useEffect, useState, useRef, useCallback } from 'react'
 import { Movies } from './components/Movies'
 import { useMovies } from './hooks/useMovies'
+import debounce from 'just-debounce-it'
 
 const useSearch = () => {
   const [search, updateSearch] = useState('')
@@ -33,19 +34,33 @@ const useSearch = () => {
 }
 
 function App() {
+  const [sort, setSort] = useState(false)
   const { search, updateSearch, error } = useSearch()
-  const { movies, getMovies } = useMovies({search})
+  const { movies, getMovies, loading } = useMovies({ search, sort })
+
+  const debounceGetMovies = useCallback(
+    debounce(search => {
+      console.log('search', search)
+    getMovies({ search })
+  }, 400)
+    , [getMovies])
 
   const handleSubmit = (e) => {
     e.preventDefault()
     /* const { query } = Object.fromEntries(new window.FormData(e.target)) */
     /* const fields = new window.FormData(e.target)
     const query = fields.get('query') */
-    getMovies()
+    getMovies({ search })
+  }
+
+  const handleSort = () => {
+    setSort(!sort)
   }
 
   const handleChange = (e) => {
-    updateSearch(e.target.value)
+    const newSearch = e.target.value
+    updateSearch(newSearch)
+    debounceGetMovies(newSearch)
   }
 
   return (
@@ -53,13 +68,16 @@ function App() {
       <header>
         <h1>Buscador de películas</h1>
         <form className="form" onSubmit={handleSubmit}>
-          <input onChange={handleChange} value={search} type="text" placeholder='Avengers, Start Wars, The Matrix...' />
+          <input onChange={handleChange} value={search} type="text" placeholder='Avengers, Star Wars, The Matrix...' />
+          <input type="checkbox" onChange={handleSort} checked={sort} />
           <button type="submit">Buscar</button>
         </form>
         {error && <p style={{ color: 'red' }}>{error}</p>}
       </header>
       <main>
-        <Movies movies={movies} />
+        {
+          loading ? <p>Cargando...</p> : <Movies movies={movies} />
+        }
       </main>
     </div>
   )
